@@ -1,0 +1,128 @@
+
+body{
+  background-image: url("tiles.png");
+  background-repeat: repeat;
+
+}
+
+h1{
+  font-family: sans-serif;
+  margin: 10px;
+  padding 10px;
+  z-index: 0;
+  grid-column: span 8;
+  font-size: 75pt;
+
+
+}
+
+h2{
+font-family: cabazon, serif;
+font-size: 35pt;
+box-shadow: inset 16em 0 gold;
+padding: 10px;
+margin: 5;
+margin-bottom: 0;
+}
+
+
+.divide{
+  border-top: thick double black;
+  padding: 2px;
+  margin: 10px;
+}
+
+#Ralign{
+  text-align: right;
+  margin-right: 10px;
+}
+#Lalign{
+  text-align: left;
+  margin-left: 10px;
+}
+
+header{
+  grid-column: span 12;
+  text-align: center;
+  font-size: 9pt;
+  padding: 0;
+
+}
+
+h3{
+  text-align: left;
+  font-size: 20pt;
+  grid-column: span 12;
+  border: 2px solid red;
+  padding: 10px;
+  margin: 0;
+  margin-top: 10px;
+
+
+}
+
+section{
+  grid-column: span 4;
+  font-size: 15pt;
+}
+
+main{
+  margin: 25pt;
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 10px;
+
+}
+
+
+.imgsize{
+  width: 100%;
+  grid-column: span 4;
+}
+.twogrid{
+  grid-column: span 12;
+  width: 100%;
+  z-index: 0;
+}
+
+iframe{
+grid-column: span 8;
+float: left;
+margin: 15px;
+
+}
+
+.span{
+  grid-column: span 8;
+  position: relative;
+}
+
+#description{
+  text-align: justify;
+  grid-column: span 4;
+    font-size: 15pt;
+
+}
+
+footer{
+  grid-column: span 12;
+  text-align: justify;
+}
+
+#wrapper {
+  margin: 1em auto;
+  padding: 0;
+  width: 960px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+a:hover {
+  background-color: yellow;
+}
+a{
+  text-decoration: underline;
+  color: black;
+}
