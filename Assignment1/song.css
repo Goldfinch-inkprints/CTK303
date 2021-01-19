@@ -8,9 +8,7 @@ body{
 h1{
   font-family: sans-serif;
   margin: 10px;
-  padding 10px;
   z-index: 0;
-  grid-column: span 8;
   font-size: 75pt;
 
 
@@ -21,7 +19,7 @@ font-family: cabazon, serif;
 font-size: 35pt;
 box-shadow: inset 16em 0 gold;
 padding: 10px;
-margin: 5;
+margin: 5px;
 margin-bottom: 0;
 }
 
