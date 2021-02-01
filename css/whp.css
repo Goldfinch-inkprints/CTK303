@@ -1,0 +1,166 @@
+
+body{
+  background-color: #e0e0e0;
+
+}
+
+main{
+  text-align: left;
+  font-size: 15pt;
+  line-height: 25px;
+  margin: 75px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.img{
+  margin-left: 200px;
+  width: 500px;
+  height: auto;
+
+}
+
+.circle1 {
+  position: absolute;
+  top: 125px;
+  right: 300px;
+  width: 315px;
+  height: 90px;
+  border-radius:100px 100px 0 0;
+  opacity: .5;
+  background-color: green;
+  z-index: -1;
+}
+
+ul {
+  list-style-type: none;
+  margin:0 60px 0 60px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-size: 20pt;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 102px 16px 102px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: purple;
+}
+
+h1{
+  font-size: 65pt;
+  font-family: sans-serif;
+  margin: 60px;
+  margin-bottom: 0;
+  border-bottom: solid 5px green;
+
+}
+
+#pin1{
+  position: absolute;
+  right:320px;
+  top:40px;
+}
+
+#pin3{
+  position: absolute;
+  right:420px;
+  top:10px;
+}
+
+#pin4{
+  position: absolute;
+  right:520px;
+  top:40px;
+}
+
+
+
+
+#vl, #v2, #v3, #v4 {
+  border-left: 6px solid green;
+  height: 80px;
+  position: absolute;
+  margin-left: -3px;
+  right:550px;
+  top: 70px;
+  z-index: -1;
+}
+
+#v2{
+  right:350px;
+}
+#v3{
+  right:450px;
+  top:50px;
+}
+#v1{
+  right:250px;
+  top:100px;
+}
+
+
+#pin2 img, #pin1 img, #pin3 img,#pin4 img {
+  transition: all .25s;
+    margin: 0;
+}
+
+#pin2:hover img, #pin1:hover img, #pin3:hover img, #pin4:hover img {
+  transform: rotate(360deg);
+
+}
+
+
+#dog {
+  position: absolute;
+  top:75px;
+  right:0;
+  width: 120px;
+  height: auto;
+  z-index: -2;
+  animation: terrier1-ani 10s linear infinite;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+footer{
+
+  font-family: cursive;
+  text-align: left;
+  color: white;
+  background-color:#333333;
+  border-top: 3px solid green;
+  padding: 10px;
+  display: grid;
+
+}
+#mail{
+  color: white;
+}
+#sign{
+text-align: right;
+
+}
+
+@keyframes terrier1-ani {
+  0%   { opacity: .0; right:0; }
+  15% {top:75px;}
+  25% {opacity: 1; top: 38px;}
+  40% {top:75px;}
+  100% { right: 1500px; }
+}
