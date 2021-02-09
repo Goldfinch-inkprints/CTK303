@@ -1,0 +1,55 @@
+
+body{
+  background: repeating-linear-gradient(
+  45deg,
+#129c10,
+  #53c251 10px,
+  #6cc26b 10px,
+  #1ca31a 20px
+);
+
+}
+
+
+h1{
+  font-family: cursive;
+  color:white;
+  text-align: center;
+  margin: 100px;
+}
+#prop{
+  animation: spin 1s linear infinite;
+  transform-origin: 170px 340px;
+
+}
+#cropDuster{
+  width: 500px;
+  animation: zoom 10.0s;
+  transform-origin: right top;
+  position: absolute;
+  top:75px;
+  right:0;
+
+}
+
+#dust{
+  opacity: 0;
+  animation: fade 4s linear;
+}
+
+@keyframes fade {
+  0%   { opacity: 1; }
+  100% {opacity: 0;}
+}
+
+
+@keyframes zoom {
+  0%   { transform: scale(0.1);}
+  100% { transform: scale(6.0);}
+}
+
+
+@keyframes spin {
+  0%   { transform: rotate(360deg);}
+  100% { transform: rotate(0deg);}
+}
