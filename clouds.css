@@ -1,0 +1,123 @@
+
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Comfortaa', cursive;
+  	margin: 0;
+  	padding: 1em;
+}
+
+
+h1 {
+	font-family: 'Comfortaa', cursive;
+  letter-spacing: 3px;
+	color: #02b5de;
+	text-shadow: gray 1px 1px 1px;
+	font-size: 3em;
+	margin: 0 0 .25em 0;
+	padding: 0;
+	border-bottom: 5px dashed goldenrod;
+}
+
+nav {
+  display: grid;
+  letter-spacing: 3px;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-bottom: 1em;
+
+
+}
+
+nav a {
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+	padding: 1em;
+  color: goldenrod;
+  font-size: 16px;
+  border: 0.3em solid goldenrod;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 1em;
+
+
+
+}
+
+nav a:hover{
+  color: white;
+}
+
+.intro {
+  line-height: 30px;
+  width: 100%;
+  margin-bottom: 1em;
+
+}
+
+#mainimg {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.sectionimg{
+  width: auto;
+  height: 200px;
+}
+
+
+h2 {
+	font-family: 'Prata', serif;
+	color: #02b5de;
+  letter-spacing: .1em;
+	font-weight: bold;
+	margin: .5em;
+	padding: .25em 0 .25em 0;
+	border-bottom: 2px dashed goldenrod;
+}
+
+footer {
+  font-family: 'Prata', serif;
+  letter-spacing: 3px;
+	background-color: #00b365;
+	color: white;
+	padding: .5em;
+	text-align: center;
+}
+
+footer a {
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+footer a:hover{
+  color: blue;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+
+@media all and (min-width: 40em){
+  nav { grid-template-columns: repeat(4,1fr) }
+}
+
+@media all and (min-width: 50em){
+  h1 { padding-bottom: .1em; }
+  .intro { width: 70%; float: right; }
+  nav { width: 30%; grid-template-columns: 1fr;   grid-row-gap: 1.2em;
+ margin-top: 20px;}
+  nav a { margin-right: 1em; }
+  main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; }
+  body { max-width: 960px; margin: 0em auto; }
+}
