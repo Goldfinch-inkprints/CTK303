@@ -1,0 +1,15 @@
+body{
+  background: rgb(204,204,204);
+  background: linear-gradient(180deg, rgba(204,204,204,1) 2%, rgba(7,7,8,1) 100%);
+}
+
+h2, h3{
+  font-family: ltc-pabst-oldstyle, serif;
+font-style: normal;
+font-weight: 400;
+}
+
+footer{
+  color: white;
+  text-align: center;
+}
