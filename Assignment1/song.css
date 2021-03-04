@@ -2,7 +2,6 @@
 body{
   background-image: url("tiles.png");
   background-repeat: repeat;
-
 }
 
 h1{
@@ -10,17 +9,35 @@ h1{
   margin: 10px;
   z-index: 0;
   font-size: 75pt;
-
-
 }
 
-h2{
+#newstitle{
 font-family: cabazon, serif;
 font-size: 35pt;
 box-shadow: inset 16em 0 gold;
 padding: 10px;
 margin: 5px;
 margin-bottom: 0;
+}
+
+#song{
+  text-align: left;
+  font-size: 20pt;
+  grid-column: span 12;
+  border: 2px solid red;
+  padding: 10px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.source{
+  padding: 0;
+  margin:0;
+  font-weight: normal;
+}
+
+h3{
+  display:none;
 }
 
 
@@ -44,29 +61,6 @@ header{
   text-align: center;
   font-size: 9pt;
   padding: 0;
-
-}
-
-h4{
-  padding: 0;
-  margin:0;
-  display: block;
-}
-
-h5{
-
-  display:none;
-}
-
-h6{
-
-  text-align: left;
-  font-size: 20pt;
-  grid-column: span 12;
-  border: 2px solid red;
-  padding: 10px;
-  margin: 0;
-  margin-top: 10px;
 }
 
 section{
@@ -88,6 +82,11 @@ main{
   width: 100%;
   grid-column: span 4;
 }
+
+#may{
+  height: 400px;
+}
+
 .twogrid{
   grid-column: span 12;
   width: 100%;
